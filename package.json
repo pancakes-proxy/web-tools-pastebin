@@ -1,0 +1,19 @@
+{
+  "name": "pastebin-service",
+  "version": "1.0.0",
+  "description": "A production ready pastebin service built in Node.js, HTML, and JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "sqlite3": "^5.1.4",
+    "body-parser": "^1.20.0",
+    "express-rate-limit": "^6.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

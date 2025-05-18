@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>internttools.org | Pastebin Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      background: #111;
+      position: relative;
+      overflow-x: hidden;
+    }
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      z-index: 0;
+    }
+    .card {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: 60px auto;
+      background: rgba(255,255,255,0.75);
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 32px 24px;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+    textarea { width: 100%; height: 200px; padding: 10px; font-size: 16px; }
+    button { padding: 10px 20px; font-size: 16px; }
+    #result { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="card">
+    <h1>Internettools.org Pastebin</h1>
+    <form id="pasteForm">
+      <textarea name="content" id="content" placeholder="Paste your text here..." required></textarea>
+      <br>
+      <button type="submit">Create Paste</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      // particles.js loaded
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
